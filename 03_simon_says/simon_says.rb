@@ -20,37 +20,20 @@ def first_word(str)
 end
 
 def titleize(str)
-	 little_words = ["the", "and", "over"]
-    final_word = str.split(" ")
+	 #little_words = ["the", "and", "over"]
+    words = str.split(" ")
 
-    final_word.each do |word|
+    words.each do |word|
     	unless word.length < 4
     	#unless little_words.include?(word)
     		word.capitalize!
       end
     end
 
-    final_word[0].capitalize!
+    words[0].capitalize!
 
-    return final_word.join(" ")
+    return words.join(" ")
 
 end
 
 
-
-#creepy atempt
-
-=begin
-def titleize(str)
-	strarr = str.split(' ')
-	strarr.each do |x|
-		strarr[x].each do |y|
-			strarr[x] = strarr[x].split
-			if strarr[x][y].length! > 4 || (x == 0)
-				strarr[x].capitalize!
-			end
-		end
-	end
-	return strarr
-end
-=end
