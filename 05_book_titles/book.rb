@@ -1,8 +1,9 @@
 class Book
 # write your code here
-	def title
-		@title
-	end
+#	def title
+#		@title
+#	end
+	attr_accessor :title
 
 	def title= (title)
 		@title = capitalize(title)
